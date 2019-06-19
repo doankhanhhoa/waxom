@@ -241,33 +241,101 @@ header {
   .projects-last .projects .row {
     display: flex; }
     .projects-last .projects .row .item {
-      /*&:first-child{
-      	img{
-      		top:-18px;
-      		left:0;
-      	}
-      }
-      &:nth-child(2){
-      	img{
-      		top:-45px;
-      		left:-16px;
-      	}
-      }
-      &:last-child{
-      	img{
-      		top:-6px;
-      		left:-11px;	
-      	}
-      }*/ }
+      position: relative;
+      top: 0;
+      padding-bottom: 30px; }
+      .projects-last .projects .row .item:hover .overlay {
+        display: block;
+        display: flex; }
+      .projects-last .projects .row .item:hover .arrow {
+        border-color: transparent transparent #362f2d transparent; }
+      .projects-last .projects .row .item:hover .content {
+        background: #362f2d; }
+        .projects-last .projects .row .item:hover .content h5 {
+          color: #f2f1f1; }
+        .projects-last .projects .row .item:hover .content p {
+          color: #bda992; }
       .projects-last .projects .row .item .image {
-        height: 238px;
+        height: 237px;
+        width: 370px;
         overflow: hidden;
         position: relative;
         margin-right: 30px; }
+      .projects-last .projects .row .item img {
+        position: absolute; }
+      .projects-last .projects .row .item:first-child img {
+        top: -18px;
+        right: -3px; }
+      .projects-last .projects .row .item:nth-child(2) img {
+        top: -44px;
+        right: -21px;
+        bottom: -75px;
+        left: -15px; }
+      .projects-last .projects .row .item:nth-child(3) img {
+        top: -5px;
+        bottom: -206px;
+        left: -11px; }
+      .projects-last .projects .row .item .overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #2f2f2f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.7;
+        display: none; }
+        .projects-last .projects .row .item .overlay .link {
+          color: #c7b299;
+          margin-right: 27px; }
+        .projects-last .projects .row .item .overlay .search {
+          color: #fff; }
+      .projects-last .projects .row .item .arrow {
+        border: 12px solid #fff;
+        width: 1px;
+        border-color: transparent transparent #fff  transparent;
+        position: absolute;
+        bottom: 135px;
+        left: 19px; }
       .projects-last .projects .row .item .content {
-        text-align: left; }
+        padding-top: 30px;
+        padding-bottom: 27px;
+        padding-left: 29px;
+        margin-right: 30px;
+        text-align: left;
+        font-family: Raleway Medium; }
         .projects-last .projects .row .item .content h5 {
-          font-size: 15px; }
+          font-size: 15px;
+          color: #c7b299;
+          margin-bottom: 14px; }
+        .projects-last .projects .row .item .content p {
+          font-size: 14px;
+          color: #d1d1d1; }
+    .projects-last .projects .row:nth-child(2) .item:first-child img {
+      top: -116px;
+      bottom: -10px;
+      left: -16px; }
+    .projects-last .projects .row:nth-child(2) .item:nth-child(2) img {
+      top: -19px;
+      left: -11px; }
+    .projects-last .projects .row:nth-child(2) .item:nth-child(3) img {
+      top: -14px;
+      left: -16px; }
+  .projects-last .projects .load-more button {
+    text-transform: uppercase;
+    padding: 20px 38px 17px;
+    color: #fff;
+    background: #998675;
+    border: none;
+    box-shadow: 0 3px #736357;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 80px;
+    border-radius: 2px; }
+    .projects-last .projects .load-more button:hover {
+      background: #736357; }
 
 /*project-last end*/
 /*video start*/
@@ -547,6 +615,29 @@ footer {
         font-size: 13px;
         text-decoration: none;
         text-transform: capitalize; }
+    footer .container .dribbble .image .row {
+      display: flex; }
+      footer .container .dribbble .image .row .img {
+        overflow: hidden;
+        margin-right: 10px;
+        height: 97px;
+        width: 127px;
+        position: relative;
+        margin-bottom: 10px; }
+        footer .container .dribbble .image .row .img img {
+          position: absolute; }
+        footer .container .dribbble .image .row .img:first-child img {
+          top: -1px;
+          left: -10px; }
+        footer .container .dribbble .image .row .img:nth-child(2) img {
+          top: -87px;
+          left: -19px; }
+      footer .container .dribbble .image .row:nth-child(2) .img:first-child img {
+        top: -6px;
+        left: -14px; }
+      footer .container .dribbble .image .row:nth-child(2) .img:nth-child(2) img {
+        top: -2px;
+        left: -6px; }
 
 /*footer end*/
 /*copyright start*/
